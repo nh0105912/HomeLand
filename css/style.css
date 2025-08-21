@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     /* overflow-x: hidden; */
-    
+
 
 }
 
@@ -91,7 +91,7 @@
     color: #fff;
 }
 
- h1 {
+h1 {
     color: #fff;
     font-weight: 400;
     letter-spacing: .1em;
@@ -100,18 +100,18 @@
 
 
 /* ---------------------------------------custom ----------------------------------------- */
-.custom{
+.custom {
     width: 100vw;
-    background-color:#364e68;
+    background-color: #364e68;
     transform: translateY(-50px);
     position: relative;
     z-index: 1;
 }
 
 
-.container-fluid{
+.container-fluid {
     background-color: #f5f5f5;
-  
+
 
 }
 
@@ -119,65 +119,117 @@
 
 
 .choose-section {
-      padding: 80px 0;
-      text-align: center;
-    }
-    .choose-section h2 {
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    .choose-section p.lead {
-      color: #555;
-      max-width: 750px;
-      margin: 0 auto 50px;
-      line-height: 1.6;
-    }
-    .choose-box {
-      padding: 20px;
-      transition: transform 0.3s ease;
-    }
-    .choose-box:hover {
-      transform: translateY(-10px);
-    }
-    .choose-box i {
-      font-size: 40px;
-      color: #1e4bbb;
-      margin-bottom: 20px;
-    }
-    .choose-box h5 {
-      font-weight: 600;
-      margin-bottom: 15px;
-    }
-    .choose-box p {
-      color: #666;
-      font-size: 15px;
-      line-height: 1.6;
-    }
-    .read-more {
-      display: inline-block;
-      margin-top: 10px;
-      font-size: 13px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #333;
-      font-weight: 500;
-    }
-    .read-more:hover {
-      color: #1e4bbb;
-    }
+    padding: 80px 0;
+    text-align: center;
+}
 
+.choose-section h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
+.choose-section p.lead {
+    color: #555;
+    max-width: 750px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
 
+.choose-box {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
 
+.choose-box:hover {
+    transform: translateY(-10px);
+}
 
-a{
-    text-decoration: none;
+.choose-box i {
+    font-size: 40px;
+    color: #1e4bbb;
+    margin-bottom: 20px;
+}
+
+.choose-box h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.choose-box p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    color: #1e4bbb;
 }
 
 
 
 
 
+a {
+    text-decoration: none;
+}
+
+
+.faq-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.accordion-button::after {
+    background-image: none !important;
+    /* remove default Bootstrap arrow */
+    content: "\25BC";
+    /* custom down arrow */
+    font-size: 14px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.accordion-button.collapsed::after {
+    transform: rotate(-90deg);
+    /* rotate when collapsed */
+}
+
+
+ .contact-box {
+      border: 1px solid #e0e0e0;
+      padding: 30px;
+      background: #fff;
+    }
+    .btn-custom {
+      background: #1a3a8d;
+      color: #fff;
+    }
+    .btn-custom:hover {
+      background: #0d245c;
+      color: #fff;
+    }
+    .contact-info h6 {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .contact-info p {
+      margin-bottom: 15px;
+    }
 
 
 
