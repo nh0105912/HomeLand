@@ -18,34 +18,31 @@
   <!-- Navbar -->
    
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar pt-5">
-      <div class="container">
-        <a class="navbar-brand" href="#">Homeland<span class="text-danger">.</span></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">Homeland<span class="text-danger">.</span></a>
 
-        <!-- Hamburger Button -->
-        <button class="navbar-toggler" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Hamburger Button (auto works on mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Right-Side Slide Menu -->
-        <div class="offcanvas-collapse" id="mobileMenu">
-          <!-- Close Button -->
-          <button class="close-btn">&times;</button>
+    <!-- Menu Items (works on both desktop + mobile) -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#buy">Buy</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rent">Rent</a></li>
+        <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#buy">Buy</a></li>
-              <li class="nav-item"><a class="nav-link" href="#rent">Rent</a></li>
-              <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
-              <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
