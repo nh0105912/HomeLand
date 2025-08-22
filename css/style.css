@@ -1,8 +1,66 @@
 * {
     padding: 0;
     margin: 0;
-    /* overflow-x: hidden; */
 
+
+
+}
+
+.filter-bar {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 20px;
+
+
+}
+
+
+.view-toggle i {
+    font-size: 22px;
+    margin-right: 12px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-toggle i:hover {
+    transform: scale(1.2);
+}
+
+
+.filter-links a {
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 500;
+    color: black;
+    transition: 0.3s;
+}
+
+.filter-links a.active {
+    color: #fff;
+}
+
+
+
+.divider {
+    height: 25px;
+    width: 1px;
+    background: black;
+}
+
+
+.sort-btn select {
+    background: transparent;
+    border: 1px solid black;
+    padding: 6px 14px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sort-btn select option {
+    color: #000;
 
 }
 
@@ -10,7 +68,7 @@
     background: transparent !important;
     transition: all 0.3s ease;
     z-index: 10;
-    /* keep navbar on top of carousel */
+
 }
 
 .navbar-brand {
@@ -32,7 +90,7 @@
     background: rgba(0, 0, 0, 0.8) !important;
 }
 
-/* Carousel full height */
+
 .carousel-inner,
 .carousel-item,
 .carousel-item img {
@@ -43,7 +101,7 @@
     object-fit: cover;
 }
 
-/* Dark gradient overlay */
+
 .carousel-overlay {
     position: relative;
     height: 100%;
@@ -67,7 +125,7 @@
     z-index: 1;
 }
 
-/* Text overlay */
+
 .carousel-caption {
     z-index: 2;
     color: white;
@@ -196,9 +254,9 @@ a {
 
 .accordion-button::after {
     background-image: none !important;
-    /* remove default Bootstrap arrow */
+
     content: "\25BC";
-    /* custom down arrow */
+
     font-size: 14px;
     transform: rotate(0deg);
     transition: transform 0.3s ease;
@@ -206,30 +264,34 @@ a {
 
 .accordion-button.collapsed::after {
     transform: rotate(-90deg);
-    /* rotate when collapsed */
+
 }
 
 
- .contact-box {
-      border: 1px solid #e0e0e0;
-      padding: 30px;
-      background: #fff;
-    }
-    .btn-custom {
-      background: #1a3a8d;
-      color: #fff;
-    }
-    .btn-custom:hover {
-      background: #0d245c;
-      color: #fff;
-    }
-    .contact-info h6 {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .contact-info p {
-      margin-bottom: 15px;
-    }
+.contact-box {
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    background: #fff;
+}
+
+.btn-custom {
+    background: #1a3a8d;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background: #0d245c;
+    color: #fff;
+}
+
+.contact-info h6 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
 
 
 

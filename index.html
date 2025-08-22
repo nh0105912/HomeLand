@@ -7,6 +7,7 @@
   <title>HomeLand Task</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
 
@@ -16,32 +17,33 @@
 
 <body>
   <!-- Navbar -->
-   
+
   <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand" href="#">Homeland<span class="text-danger">.</span></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">Homeland<span class="text-danger">.</span></a>
 
-    <!-- Hamburger Button (auto works on mobile) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Hamburger Button (auto works on mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Menu Items (works on both desktop + mobile) -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="./buy.html">Buy</a></li>
-        <li class="nav-item"><a class="nav-link" href="./rent.html">Rent</a></li>
-        <li class="nav-item"><a class="nav-link" href="./property.html">Properties</a></li>
-        <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        <!-- Menu Items (works on both desktop + mobile) -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./buy.html">Buy</a></li>
+            <li class="nav-item"><a class="nav-link" href="./rent.html">Rent</a></li>
+            <li class="nav-item"><a class="nav-link" href="./property.html">Properties</a></li>
+            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -143,6 +145,33 @@
           <button class="btn w-100  text-white bg-success rounded-0">Search</button>
         </div>
 
+      </div>
+    </div>
+    <div class="container filter-bar d-flex align-items-center justify-content-between">
+      <!-- View toggle -->
+      <div class="view-toggle">
+        <i class="fas fa-th-large"></i>
+        <i class="fas fa-list"></i>
+      </div>
+
+      <!-- Links + Sort in one flex div -->
+      <div class="d-flex align-items-center gap-3">
+        <!-- Links -->
+        <div class="filter-links me-3">
+          <a href="#" class="active">All</a> |
+          <a href="#">Rent</a> |
+          <a href="#">Sale</a>
+        </div>
+
+        <!-- Sort -->
+        <div class="sort-btn">
+          <select class="form-select">
+            <option selected disabled>Sort by</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+          </select>
+        </div>
       </div>
     </div>
   </section>
